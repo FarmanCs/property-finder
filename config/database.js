@@ -10,7 +10,6 @@ const connectDB = async () => {
     return;
   }
 
-  // Connect to MongoDB
   try {
     await mongoose.connect(process.env.MONGODB_URI, {
       serverSelectionTimeoutMS: 10000,
